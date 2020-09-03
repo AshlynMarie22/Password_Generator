@@ -11,51 +11,63 @@ function writePassword() {
 }
 function generatePassword(){
   //all code will go here
-  for (var i=0; i< 1; i++) {
-  var passwordLength = prompt("Between 8-128 characters, how long do you want your password");
-  var passwordLC = confirm ("Do you want to include lower case characters?");
-  var passwordUC = confirm ("Do you want to include upper case characters?");
-  var passwordNM = confirm ("Do you want to include numbers?");
-  var passwordSC = confirm ("Do you want to include special characters?");
-  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; 
-  var specialcharacter = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "[", "]", "=", "<", ">", "/", ",", ".", "|", "~", ",", "?"]
-  var randNumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+    for (var i=0; i< 1; i++) {
 
-  var getRandomLowerCase = 
-  lowercase[Math.floor(Math.random()*lowercase.length)];
+        //Prompts/Confirms
+        var passwordLength = prompt("Between 8-128 characters, how long do you want your password");
+        if (passwordLength < 8 || passwordLength > 128){
+            alert("Please select a number between 8-128")
+            var passwordLength = prompt("Between 8-128 characters, how long do you want your password");
+        }
+        var passwordLC = confirm ("Do you want to include lower case characters?");
+        var passwordUC = confirm ("Do you want to include upper case characters?");
+        var passwordNM = confirm ("Do you want to include numbers?");
+        var passwordSC = confirm ("Do you want to include special characters?");
 
-  var getRandomUpperCase = 
-  uppercase[Math.floor(Math.random()*uppercase.length)];
+        //Arrays
+        var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; 
+        var specialcharacter = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "[", "]", "=", "<", ">", "/", ",", ".", "|", "~", ",", "?"]
+        var randNumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
-  var getRandomSC =
-  specialcharacter[Math.floor(Math.random()*specialcharacter.length)];
+        //Random Calculators:
+        var getRandomLowerCase = 
+        lowercase[Math.floor(Math.random()*lowercase.length)];
 
-  var getRandomNM =
-  randNumber[Math.floor(Math.random()*randNumber.length)];
 
-  var paswordlengthValue= Number(passwordLength.valueOf);
+        var getRandomUpperCase = 
+        uppercase[Math.floor(Math.random()*uppercase.length)];
 
-  const randomFun = {
-    lower : getRandomLowerCase,
-    upper : getRandomUpperCase,
-    number : getRandomNM,
-    symbol : getRandomSC
-  }
-  
-  if (passwordLC && passwordLC && passwordNM && passwordSC){
-    for (i=0; i< passwordLengthValue; i++){
-    
+        var getRandomSC =
+        specialcharacter[Math.floor(Math.random()*specialcharacter.length)];
 
-  }
+        var getRandomNM =
+        randNumber[Math.floor(Math.random()*randNumber.length)];
 
-  if (passwordUC){
-    console.log(passwordLength)
+        //var paswordlengthValue= Number(passwordLength.valueOf);
 
-  }
+        const randomFun = {
+            lower : getRandomLowerCase,
+            upper : getRandomUpperCase,
+            number : getRandomNM,
+            symbol : getRandomSC
+        }
 
-}
-  }}
+        if (passwordLC && passwordLC && passwordNM && passwordSC){
+        //  for (i=0; i< passwordLengthValue; i++){}
+        }
+        //Tests:
+        if (passwordUC){
+            console.log(passwordLength);
+            console.log(getRandomLowerCase);
+            console.log(getRandomNM);
+            console.log(getRandomSC);
+            console.log(getRandomUpperCase);
+
+        }
+
+
+        }}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
