@@ -9,14 +9,14 @@
 
 ## Description
 
-This project had us build a responsive portfolio with an About Me Page, Portfolio Page, and a Contact Page with a contact form. This project helped refine my skills with bootstrap, the grid system, semantic html, and formatting. 
+This project 
 
 ## Installation
 
 Clone this repo by using:
 
 ```bash
-git clone https://github.com/AshlynMarie22/Ashlyn_Smith-s_Portfolio.git
+git clone https://github.com/AshlynMarie22/Password_Generator.git
 ```
 
 Next check to make sure there weren't any problems:
@@ -53,7 +53,7 @@ Then right click anywhere in the html file and select "Open in Default Browser":
 
 Website URL: 
 ```bash
-https://ashlynmarie22.github.io/Ashlyn_Smith-s_Portfolio/
+https://ashlynmarie22.github.io/Password_Generator/
 ```
 ### About Me Page:
 ![aboutmepage](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-01+at+8.29.18+PM.png)

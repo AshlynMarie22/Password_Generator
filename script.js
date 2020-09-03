@@ -53,7 +53,7 @@ function generatePassword() {
   }
 
   for (var i = 0; i < passwordLength; i++) {
-    finalPassword.push(
+    finalPassword = finalPassword.concat(
       masterCharacters[Math.floor(Math.random() * masterCharacters.length)]
     );
   }
