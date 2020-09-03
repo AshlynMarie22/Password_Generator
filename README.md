@@ -5,11 +5,12 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Preview Website](#preview-website)
+* [How to Use](#how-to-use)
 * [License](#mit-license)
 
 ## Description
 
-This project 
+This site can generate a password based off of selected criteria. The generator can geterate passwords that contain upper case letters, lower case letters, special characters, and/or numbers. The generator can also customized the password length between 8-128 characters. 
 
 ## Installation
 
@@ -55,14 +56,30 @@ Website URL:
 ```bash
 https://ashlynmarie22.github.io/Password_Generator/
 ```
-### About Me Page:
-![aboutmepage](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-01+at+8.29.18+PM.png)
 
-### Portfolio Page:
-![portfoliopage](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-01+at+8.29.33+PM.png)
+![screenshot2](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.48.36+PM.png)
 
-### Contact Page:
-![contactpage](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-01+at+8.29.47+PM.png)
+
+## How to Use:
+1. Select the "Generate Password" button
+2. Then enter the number of characters (between 8 and 128) that the password should be. 
+![firststep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.49.52+PM.png)
+
+3. Select if you would like lower case letters in your password.
+![secondstep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.50.17+PM.png)
+
+4. Select if you would like upper case letters in your password.
+![thirdstep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.50.27+PM.png)
+
+5. Select if you would like numbers in your password.
+![fourthstep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.50.36+PM.png)
+
+6. Select if you would like special characters in your password.
+![fifthstep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.50.46+PM.png)
+
+7. Generated password will appear in the white box!
+![sixthstep](https://ashlynimages.s3.us-east-2.amazonaws.com/Screen+Shot+2020-09-03+at+5.57.34+PM.png)
+
 
 ---
 #### MIT License
